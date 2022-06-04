@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Basic form</title>
+        <style>
+            body { background-color: ivory;}
+            ol li { list-style-type: none;}
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>Input text</h1>
+            <form>
+                <input type="text" placeholder="Hi != Moido">
+            </form>
+            <h1>Text area</h1>
+            <form>
+                <input type="textarea" placeholder="Nakke">
+            </form>
+            <h1>Multiline textarea</h1>
+            <textarea name="bigarea" rows="10" cols="10">Some text!</textarea>
+            <h1>Login</h1>
+            <form>
+                <p>Username&nbsp;<input tpye="text" name="username" maxlength="15" id="username"></p>
+                <p>Password&nbsp;<input type="password" name="pass" maxlength="15" id="passwd"></p>
+                <input type="submit" value="Send"><input type="reset" value="Reset">
+            </form>
+            <h1>Email Login</h1>
+            <p>Email&nbsp;<input type="email" name="useremail" id="useremail"></p>
+            <p>Email&nbsp;<input type="password" name="password2" maxlength="15" id="password2"></p>
+        </section>
+        <hr/>
+        <section>
+            <h1>Dropdown</h1>
+            <label for="Education">Select education level</label>
+            <input list="education-list" name="education" id="education" />
+            <datalist id="education-list">
+                <option value="Middle School">
+                <option value="High School">
+                <option value="Bachelors Degree">
+                <option value="Masters Degree">
+                <option value="PhD">
+            </datalist>
+        </section>
+        <section>
+            <h1>Education level</h1>
+            <ol>
+                <li><input type="radio" name="educ" value="High school">High School</li>
+                <li><input type="radio" name="educ" value="Bachelors degree">Bachelors degree</li>
+                <li><input type="radio" name="educ" value="Masters degree">Masters degree</li>
+                <li><input type="radio" name="educ" value="PhD">PhD</li>
+            </ol>
+            <h1>Education level checkbox</h1>
+            <ol>
+                <li><input type="checkbox" name="educ2" value="High school">High School</li>
+                <li><input type="checkbox" name="educ2" value="Bachelors degree">Bachelors degree</li>
+                <li><input type="checkbox" name="educ2" value="Masters degree">Masters degree</li>
+                <li><input type="checkbox" name="educ2" value="PhD">PhD</li>
+            </ol>
+        </section>
+        <section>
+            <h1>Select dropdown</h1>
+            <select id="education-list123">
+                <option>Middle School</option>
+                <option>High School</option>"
+                <option>Bachelors Degree</option>"
+                <option>Masters Degree</option>"
+                <option>PhD</option>"
+            </select>
+            <h1>Grouped select dropdown</h1>
+            <select id="education-list123">
+                <optgroup label="Compulsory">
+                    <option>Middle School</option>
+                    <option>High School</option>"
+                </optgroup>
+                <optgroup label="Advanced">
+                    <option>Bachelors Degree</option>"
+                    <option>Masters Degree</option>"
+                    <option>PhD</option>"
+                 </optgroup>
+            </select>
+        </section>
+    </body>
+
+</html>
