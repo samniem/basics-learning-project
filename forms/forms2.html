@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Forms Part 2</title>
+        <style>
+            body { background-color: gainsboro;}
+            h2, p { color:indigo; }
+            h2 { font-size: 2.2em;}
+            p { font-size: 1.5em;}
+        </style>
+        
+    </head>
+
+    <body>
+        <section>
+            <h2>Data and Time</h2>
+            <form>
+                <p>Date</p>
+                <input type="date" name="bestdate" value="2016-01-01"/>
+                <p>Wake-up Time</p>
+                <input type="time" value="06:00" />
+                <p>Local datetime</p>
+                <input type="datetime-local" />
+                <p>Month</p>
+                <input type="month" />
+            </form>
+        </section>
+        <section>
+            <h2>Numerical inputs</h2>
+            <p>Number of milk shakes
+                <input name="shakesCount" type="number" step=1 min=1 max=12/>
+            </p>
+            <p>Number of premium shakes
+                <input name="premiumShakesCount" type="range" step=1 min=1 max=12/>
+            </p>
+        </section>
+    </body>
+
+</html>
